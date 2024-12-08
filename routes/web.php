@@ -18,5 +18,5 @@ Route::get('/login', function () {
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login');
 
 Route::get('/register', function () {
-    return view('register');
+    return view('registrasi'); // Mengarahkan ke halaman registrasi
 })->name('register');
